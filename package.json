@@ -1,0 +1,20 @@
+{
+  "name": "topcoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "~4.16.1",
+    "mongoose": "^5.11.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
