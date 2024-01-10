@@ -1,7 +1,17 @@
 const router = require('express').Router();
 
-router.get('/', (req, res) => {
-	res.send("<h1>Testing Route</h1>");
-})
+const {
+	getStudents,
+	createStudent,
+	getStudent,
+	updateStudent,
+	deleteStudent,
+} = require('../controllers/controller');
+
+router.get('/', getStudents);
+router.post('/', createStudent);
+router.get('/:id', getStudent);
+router.patch('/:id', updateStudent);
+router.delete('/:id', deleteStudent);
 
 module.exports = router;
